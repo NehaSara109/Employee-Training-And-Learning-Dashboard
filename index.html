@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StaffLearn - Training Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>StaffLearn</h2>
+  <a href="#">Dashboard</a>
+  <a href="#">Training Modules</a>
+  <a href="#">Quizzes</a>
+  <a href="#">Certificates</a>
+  <a href="#">Leaderboard</a>
+</div>
+
+<div class="main">
+  <h1>Welcome, Staff Member 👋</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Customer Service</h3>
+      <p>Progress: <span id="cs-progress">40%</span></p>
+      <button onclick="increaseProgress('cs-progress')">Complete Lesson</button>
+    </div>
+
+    <div class="card">
+      <h3>Hotel Safety Training</h3>
+      <p>Progress: <span id="safety-progress">20%</span></p>
+      <button onclick="increaseProgress('safety-progress')">Complete Lesson</button>
+    </div>
+
+    <div class="card">
+      <h3>Cybersecurity Awareness</h3>
+      <p>Progress: <span id="cyber-progress">10%</span></p>
+      <button onclick="increaseProgress('cyber-progress')">Complete Lesson</button>
+    </div>
+  </div>
+
+  <h2>Quiz Section</h2>
+  <div class="quiz">
+    <p>Q1: What should you do if you receive a suspicious email?</p>
+    <button onclick="alert('Correct! Report it to IT.')">Report to IT</button>
+    <button onclick="alert('Wrong answer')">Ignore</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
